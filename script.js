@@ -14,6 +14,8 @@
  * The root node of DOM is the "document" object, it serves as an entry point to the DOM via JS.
  * NOTE: DOM methods and properties for DOM manipulation are not actually part of JS, 
          they are actually as part of WEB APIs (Application Programming Interface).
+         WEB APIs are like libraries (also written in JS and are automatically available for us to use) that browsers implement and we can access from our JS code.
+         Besides the DOM there are many more WEB APIs e.g. Timers, Fetch etc.
 
  * Reacting to something that happens in the DOM (Listening to Events)
  * Event - something that happens on the page
