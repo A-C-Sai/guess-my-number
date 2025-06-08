@@ -20,6 +20,8 @@
  * Reacting to something that happens in the DOM (Listening to Events)
  * Event - something that happens on the page
  * we can react to events  "document.querySelector(<element>).addEventListener(<typeOfEvent>,<eventHandler>)" 
+ * .value property always returns a string.
+ * It's not good to just rely on DOM to hold our data, it is better to have these data stored in variables so that our application knows their values at all points (state variables)
 */
 
 
@@ -28,6 +30,7 @@ document.querySelector('.guess').value = ""
 
 let bestAttempt = 999999;
 
+// Math.random() ---> [0, 1) * 20 ----> [0, 20) -----> Math.trunc() removing the decimal portion of a number and keeping only the integer part ----> [0, 19] ----> + 1 ------> [0, 20]
 const generateNumber = () => Math.trunc((Math.random() * 20)) + 1;
 let luckyNumber = generateNumber();
 
